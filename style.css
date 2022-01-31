@@ -1,0 +1,158 @@
+
+:root{
+--Moderateblue: hsl(238, 40%, 52%);
+--SoftRed: hsl(358, 79%, 66%);
+--Lightgrayishblue: hsl(239, 57%, 85%);
+--Palered: hsl(357, 100%, 86%);
+
+--Darkblue: hsl(212, 24%, 26%);
+--GrayishBlue: hsl(211, 10%, 45%);
+--Lightgray: hsl(223, 19%, 93%);
+--Verylightgray: hsl(228, 33%, 97%);
+--White: hsl(0, 0%, 100%);
+--Fontsize : 16px;
+--Family: "Rubik";
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: var(--Family), sans-serif;
+ background-color: var(--Lightgray);
+}
+main{
+    position: relative;
+    display: block;
+   
+}
+.wrap-comments{
+    overflow-y: auto;
+    position: relative;
+    height: 80vh;
+}
+.comment{
+ /*structure*/
+ position: relative;
+ padding: 1em;
+ background: white;
+ margin: 1em;
+ border-radius: 10px;
+}
+.comment-header{
+ display: flex;
+ justify-content: flex-start;
+ margin: 1em;
+ align-items: center;
+}
+.profile-pic{
+    margin-right: 0.5em;
+
+}
+.name{
+    margin-right: 0.5em;
+}
+.time{
+    font-weight: 300;
+    color: var(--GrayishBlue)
+}
+.me{
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+    width: 3em;
+    padding-left: 5px;
+    height: 2em;
+    border-radius: 2px;
+    
+  background-color:var(--Moderateblue);
+  color: white;
+}
+.body{
+    margin-left: 1.3em;
+    margin-bottom: 1em;
+    font-weight: 300;
+}
+.comment-footer{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.mine-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-link {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1em;
+  
+}
+.del a{
+    color: red;
+   
+}
+ a{
+    margin-left: 0.5em;
+}
+.num-link{
+ margin: 1em;
+}
+.number{
+    display: flex;
+    justify-content: space-between;
+    color: var(--Moderateblue);
+    background-color: var(--Lightgray);
+    border-radius: 1em;
+}
+.reply-section{
+    position: sticky;
+    bottom: 0em;
+    width: 100%;
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    margin: 1em;
+    text-align: center;
+    border: 2px solid red;
+}
+.input{
+    position: relative;
+    border: 1px solid var(--Lightgrayishblue);
+    padding: 1em;
+    width: 100%;
+    border-radius: 10px;
+    font-family: var(--Family);
+    font-weight: 300;
+    resize: none;
+}
+.reply-footer{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.send{
+    padding: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-weight: bolder;
+    color: white;
+    background-color: var(--Moderateblue);
+    border: none;
+    border-radius: 5px;
+}
+/*icons*/
+
+.fa-reply{
+color: var(--Moderateblue);
+}
+.fa-trash-alt{
+    color: red;
+}
+.fa-pen{
+    color: var(--Moderateblue);
+}
